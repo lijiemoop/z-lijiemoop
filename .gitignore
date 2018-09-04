@@ -60,4 +60,4 @@ tmp/*
 *.log
 serviceAccountKey.json
 initFirebase.js
-/page_source/
+/page-source/
