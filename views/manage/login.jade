@@ -1,0 +1,29 @@
+doctype html
+html
+    head(lang='en')
+        meta(charset='UTF-8')
+        link(rel='stylesheet', href='/css/style.css')
+        link(rel='stylesheet', href='/css/manageLogin/style.css')
+        title #{title}
+    body
+        div
+            .j-login-container
+                .j-login-header
+                    p #{lang.user}#{lang.login}
+                    a #{lang.change}#{lang.login}#{lang.method}
+                .j-login-item
+                    span #{lang.user}#{lang.name}
+                        p.j-item-err-info
+                    input#item(type='text')
+                .j-login-item
+                    span #{lang.password}
+                        p.j-password-err-info
+                    input#password(type='password')
+                .j-login-footer
+                    p
+                        | #{lang.forget}#{lang.password}？
+                        a #{lang.find}#{lang.password}
+                    #login-btn
+    script(src='/js/lib/jquery.js')
+    script(src='/js/lib/publicFn.js')
+    script(src='/js/manageLogin/manageLogin.js')

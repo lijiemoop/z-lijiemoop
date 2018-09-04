@@ -1,0 +1,58 @@
+{
+  "version" : "0.0.1",
+  "tables" : [
+    {
+      "name" : "user",
+      "columns" : [
+        {"Field" : "id","Type" : "int(10) unsigned","Null" : "NO","Key" : "PRI","Default" : null,"Extra" : "auto_increment"},
+        {"Field" : "name","Type" : "varchar(20)","Null" : "NO","Key" : "","Default" : null,"Extra" : ""},
+        {"Field" : "nickname","Type" : "varchar(50)","Null" : "NO","Key" : "","Default" : null,"Extra" : ""},
+        {"Field" : "password", "Type" : "varchar(100)", "Null" : "NO", "Key" : "", "Default" : null, "Extra" : ""},
+        {"Field" : "email", "Type" : "varchar(50)", "Null" : "NO", "Key" : "", "Default" : null, "Extra" : ""},
+        {"Field" : "tel", "Type" : "varchar(20)", "Null" : "NO", "Key" : "", "Default" : null, "Extra" : ""},
+        {"Field" : "country", "Type" : "varchar(50)", "Null" : "NO", "Key" : "", "Default" : null, "Extra" : ""},
+        {"Field" : "province", "Type" : "varchar(20)", "Null" : "NO", "Key" : "", "Default" : null, "Extra" : ""},
+        {"Field" : "city", "Type" : "varchar(20)", "Null" : "NO", "Key" : "", "Default" : null, "Extra" : ""},
+        {"Field" : "address", "Type" : "varchar(100)", "Null" : "NO", "Key" : "", "Default" : null, "Extra" : ""},
+        {"Field" : "sex", "Type" : "int(1)", "Null" : "NO", "Key" : "", "Default" : 1, "Extra" : ""},
+        {"Field" : "registerTime", "Type" : "varchar(100)", "Null" : "NO", "Key" : "", "Default" : null, "Extra" : ""},
+        {"Field" : "year", "Type" : "int(4)", "Null" : "NO", "Key" : "", "Default" : 1990, "Extra" : ""},
+        {"Field" : "month", "Type" : "int(4)", "Null" : "NO", "Key" : "", "Default" : 1, "Extra" : ""},
+        {"Field" : "day", "Type" : "int(4)", "Null" : "NO", "Key" : "", "Default" : 1, "Extra" : ""},
+        {"Field" : "avatar", "Type" : "varchar(100)", "Null" : "NO", "Key" : "", "Default" : null, "Extra" : ""},
+        {"Field" : "autograph", "Type" : "varchar(200)", "Null" : "NO", "Key" : "", "Default" : null, "Extra" : ""},
+        {"Field" : "level", "Type" : "int(20)", "Null" : "NO", "Key" : "", "Default" : 1, "Extra" : ""},
+        {"Field" : "integral", "Type" : "int(200)", "Null" : "NO", "Key" : "", "Default" : null, "Extra" : ""},
+        {"Field" : "experience", "Type" : "int(200)", "Null" : "NO", "Key" : "", "Default" : null, "Extra" : ""}
+      ]
+    },
+    {
+      "name" : "role",
+      "columns" : [
+        {"Field" : "id", "Type" : "int(10) unsigned", "Null" : "NO", "Key" : "PRI", "Default" : null, "Extra" : "auto_increment"},
+        {"Field" : "name", "Type" : "varchar(20)", "Null" : "NO", "Key" : "", "Default" : null, "Extra" : ""}
+      ]
+    },
+    {
+      "name" : "authority",
+      "columns" : [
+        {"Field" : "id", "Type" : "int(10) unsigned", "Null" : "NO", "Key" : "PRI", "Default" : null, "Extra" : "auto_increment"},
+        {"Field" : "name", "Type" : "varchar(20)", "Null" : "NO", "Key" : "", "Default" : null, "Extra" : ""}
+      ]
+    },
+    {
+      "name" : "user_role",
+      "columns" : [
+        {"Field" : "userId", "Type" : "int(10)", "Null" : "NO", "Key" : "", "Default" : null, "Extra" : ""},
+        {"Field" : "roleId", "Type" : "int(10)", "Null" : "NO", "Key" : "", "Default" : null, "Extra" : ""}
+      ]
+    },
+    {
+      "name" : "role_authority",
+      "columns" : [
+        {"Field" : "roleId", "Type" : "int(10)", "Null" : "NO", "Key" : "", "Default" : null, "Extra" : ""},
+        {"Field" : "authId", "Type" : "int(10)", "Null" : "NO", "Key" : "", "Default" : null, "Extra" : ""}
+      ]
+    }
+  ]
+}

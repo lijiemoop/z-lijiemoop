@@ -1,0 +1,18 @@
+{
+  "appPort" : 1993,
+  "mysql" : {
+    "url": "127.0.0.1",
+    "user": "root",
+    "password": "password",
+    "database": "jm"
+  },
+  "redis" : {
+    "url": "127.0.0.1",
+    "port": 6379 ,
+    "secret" : "you_guess",
+    "ttl" : 1800,
+    "logErrors" : true,
+    "client": "client"
+  },
+  "defaultLanguage" : "ch-zn"
+}
